@@ -1,7 +1,194 @@
-<html>
-  <head></head>
+<!DOCTYPE html>
+<html lang="en">
 
-          <body>
-    hello my ndfames shanto
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanto Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar">
+
+      <h2 class="logo">Shanto</h2>
+
+      <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+      <button id="themeBtn">🌙</button>
+
+    </nav>
+
+  </header>
+
+  <section id="home" class="hero">
+
+    <h1>Hello, I'm <span>Symul Haque Shanto</span></h1>
+
+    <p>Electrical & Telecommunication Engineering Student</p>
+
+    <button onclick="scrollToSection('projects')">View My Work</button>
+
+  </section>
+
+
+  <section id="about" class="about">
+
+    <h2>About Me</h2>
+
+    <p>
+
+      I am an Electrical and Telecommunication Engineering student at
+      Rajshahi University of Engineering and Technology. I am passionate
+      about programming and web development. My goal is to become a
+      skilled software developer who can build innovative digital solutions.
+
+      I enjoy learning new technologies and improving my problem solving
+      skills. Besides academics I like exploring creative ideas and
+      developing projects that combine both hardware and software.
+
+    </p>
+
+  </section>
+
+
+  <section id="education">
+
+    <h2>Education</h2>
+
+    <table>
+
+      <tr>
+        <th>Institution</th>
+        <th>Degree</th>
+        <th>Year</th>
+        <th>Result</th>
+      </tr>
+
+      <tr>
+        <td>RUET</td>
+        <td>BSc in ETE</td>
+        <td>2023-Present</td>
+        <td>Running</td>
+      </tr>
+
+      <tr>
+        <td>College</td>
+        <td>HSC</td>
+        <td>2020</td>
+        <td>GPA 5.00</td>
+      </tr>
+
+    </table>
+
+  </section>
+
+
+  <section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skill">
+
+      <p>HTML</p>
+
+      <div class="progress">
+        <div class="progress-bar" data-width="90%"></div>
+      </div>
+
+    </div>
+
+    <div class="skill">
+
+      <p>CSS</p>
+
+      <div class="progress">
+        <div class="progress-bar" data-width="80%"></div>
+      </div>
+
+    </div>
+
+    <div class="skill">
+
+      <p>JavaScript</p>
+
+      <div class="progress">
+        <div class="progress-bar" data-width="70%"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+      <div class="card">
+
+        <h3>Portfolio Website</h3>
+
+        <p>Personal portfolio using HTML, CSS and JavaScript.</p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Arduino Ventilator</h3>
+
+        <p>Smart ventilator project using Arduino and sensors.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <form id="contactForm">
+
+      <input type="text" id="name" placeholder="Your Name">
+
+      <input type="email" id="email" placeholder="Your Email">
+
+      <textarea id="message" placeholder="Message"></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </section>
+
+
+  <footer>
+
+    <p>© 2026 Symul Haque Shanto</p>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
 </html>
