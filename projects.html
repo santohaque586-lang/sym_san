@@ -1,54 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <title>Projects</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 
 <body>
 
-    <header>
-        <h1>Projects</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+    <header class="main-header">
+
+
+        <nav>
+
+            <!-- LEFT SIDE LOGO -->
+
+            <div class="nav-left">
+
+                <a href="index.html">
+
+                    <img src="images/ChatGPT Image Mar 7, 2026, 12_11_12 AM.png" class="nav-logo" alt="Logo">
+
+                </a>
+
+            </div>
+
+            <!-- CENTER MENU -->
+
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- RIGHT SIDE SOCIAL ICONS -->
+
+            <div class="nav-social">
+
+                <a href="https://www.facebook.com/symul.haque.3"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.youtube.com/@incidentbyshs5483"><i class="fab fa-youtube"></i></a>
+
+                <a href="https://x.com/by_symsano09"><i class="fab fa-twitter"></i></a>
+
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </nav>
+
+    </header>
 
     <section>
 
-        <h3>Portfolio Website</h3>
 
-        <p>
-            A personal portfolio website developed using HTML, CSS and JavaScript
-            to showcase my education, skills and projects.
-        </p>
 
-        <p><b>Tools:</b> HTML, CSS, JavaScript</p>
+        <!-- FILTER -->
 
-        <h3>Arduino Ventilator Project</h3>
+        <div class="filter-container">
 
-        <p>
-            A smart ventilator system developed using Arduino, NodeMCU and
-            different sensors to monitor patient breathing and oxygen level.
-        </p>
+            <button class="filter-btn">
 
-        <p><b>Tools:</b> Arduino, ESP8266, Sensors</p>
+                <i class="fa-solid fa-filter"></i> Filter
+
+            </button>
+
+            <div class="filter-menu">
+
+                <button onclick="filterProjects('all')">All Projects</button>
+
+                <button onclick="filterProjects('completed')">Completed</button>
+
+                <button onclick="filterProjects('running')">Running</button>
+
+                <button onclick="filterProjects('upcoming')">Upcoming</button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="projects-container">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="card project completed">
+
+                <div class="project-slider">
+
+                    <div class="slides">
+
+                        <img src="images/protfolio project 1.png" class="slide">
+
+                        <img src="images/protfolio project 2.png" class="slide">
+
+                        <img src="images/protfolio project 3.png" class="slide">
+
+                    </div>
+
+                    <button class="prev" onclick="changeSlide(this,-1)">❮</button>
+
+                    <button class="next" onclick="changeSlide(this,1)">❯</button>
+
+                </div>
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+
+                    A responsive portfolio website developed using HTML,
+                    CSS and JavaScript to showcase my skills and projects.
+
+                </p>
+
+                <p><b>Status:</b> Completed</p>
+
+                <a href="reports/portfolio-report.pdf" target="_blank" class="learn-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="card project running">
+
+                <div class="project-slider">
+
+                    <div class="slides">
+
+                        <img src="images/ventilator project 1.jpg" class="slide">
+
+                        <img src="images/ventilator project 2.jpg" class="slide">
+
+                        <img src="images/ventilator project 3.jpg" class="slide">
+
+                    </div>
+
+                    <button class="prev" onclick="changeSlide(this,-1)">❮</button>
+
+                    <button class="next" onclick="changeSlide(this,1)">❯</button>
+
+                </div>
+
+                <h3>Arduino Ventilator System</h3>
+
+                <p>
+
+                    A smart ventilator system built using Arduino,
+                    NodeMCU and sensors to monitor breathing.
+
+                </p>
+
+                <p><b>Status:</b> Running</p>
+
+                <a href="reports/ventilator-report.pdf" target="_blank" class="learn-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="card project upcoming">
+
+                <div class="project-slider">
+
+                    <div class="slides">
+
+                        <img src="images/fake news img 1.avif" class="slide">
+
+                        <img src="images/fake news 2.png" class="slide">
+
+                        <img src="images/fake news 3.png" class="slide">
+
+                    </div>
+
+                    <button class="prev" onclick="changeSlide(this,-1)">❮</button>
+
+                    <button class="next" onclick="changeSlide(this,1)">❯</button>
+
+                </div>
+
+                <h3>AI Based Health Monitoring</h3>
+
+                <p>
+
+                    Future project for monitoring patient health
+                    using artificial intelligence and IoT devices.
+
+                </p>
+
+                <p><b>Status:</b> Upcoming</p>
+
+                <a href="reports/ai-health-report.pdf" target="_blank" class="learn-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+
+        </div>
 
     </section>
 
+
+
+    <!-- BACK TO TOP -->
+
+
+
+
+
     <footer>
+
         <p>© 2026 Symul Haque Shanto</p>
+
     </footer>
+    <button id="topBtn" onclick="goTop()">
+
+        <i class="fa-solid fa-jet-fighter-up"></i>
+
+    </button>
+
+    <script src="js/script.js"></script>
 
 </body>
 

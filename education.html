@@ -1,68 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Education | Symul Haque Shanto</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 
 <body>
 
-    <header>
-        <h1>Education</h1>
+
+
+    <header class="main-header">
+
+
+
+        <nav>
+
+            <!-- LEFT SIDE LOGO -->
+
+            <div class="nav-left">
+
+                <a href="index.html">
+
+                    <img src="images/ChatGPT Image Mar 7, 2026, 12_11_12 AM.png" class="nav-logo" alt="Logo">
+
+                </a>
+
+            </div>
+
+            <!-- CENTER MENU -->
+
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- RIGHT SIDE SOCIAL ICONS -->
+
+            <div class="nav-social">
+
+                <a href="https://www.facebook.com/symul.haque.3"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.youtube.com/@incidentbyshs5483"><i class="fab fa-youtube"></i></a>
+
+                <a href="https://x.com/by_symsano09"><i class="fab fa-twitter"></i></a>
+
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </nav>
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section>
 
-        <table>
+    <section class="education-section">
 
-            <tr>
-                <th>Institution</th>
-                <th>Degree</th>
-                <th>Year</th>
-                <th>Result</th>
-            </tr>
 
-            <tr>
-                <td>RUET</td>
-                <td>BSc in ETE</td>
-                <td>2023 - Present</td>
-                <td>CGPA: Running</td>
-            </tr>
 
-            <tr>
-                <td>College Name</td>
-                <td>HSC</td>
-                <td>2020</td>
-                <td>GPA: 5.00</td>
-            </tr>
 
-            <tr>
-                <td>School Name</td>
-                <td>SSC</td>
-                <td>2018</td>
-                <td>GPA: 5.00</td>
-            </tr>
+        <div class="edu-row">
 
-        </table>
+            <div class="edu-image">
+
+                <img src="images/ruet.jpg" alt="RUET">
+
+            </div>
+
+
+            <div class="edu-box">
+
+                <h3>BSc in Electrical & Telecommunication Engineering</h3>
+
+                <p><b>Institution:</b> Rajshahi University of Engineering & Technology (RUET)</p>
+
+                <p><b>Year:</b> 2023 - Present</p>
+
+                <p>
+                    Currently studying Electrical and Telecommunication Engineering with
+                    focus on electronics, communication systems and programming.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="edu-row reverse">
+
+            <div class="edu-image">
+
+                <img src="images/school.jpg" alt="College">
+
+            </div>
+
+
+            <div class="edu-box">
+
+                <h3>Higher Secondary Certificate (HSC)</h3>
+
+                <p><b>Institution:</b> Example College</p>
+
+                <p><b>Year:</b> 2022</p>
+
+                <p><b>Result:</b> GPA 5.00</p>
+
+                <p>
+                    Completed higher secondary education in science background
+                    with strong interest in physics, mathematics and technology.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="edu-row">
+
+            <div class="edu-image">
+
+                <img src="images/school.jpg" alt="School">
+
+            </div>
+
+
+            <div class="edu-box">
+
+                <h3>Secondary School Certificate (SSC)</h3>
+
+                <p><b>Institution:</b> Example High School</p>
+
+                <p><b>Year:</b> 2020</p>
+
+                <p><b>Result:</b> GPA 5.00</p>
+
+                <p>
+                    Completed secondary education with excellent academic performance
+                    and developed strong foundation in science and mathematics.
+                </p>
+
+            </div>
+
+        </div>
+
+
 
     </section>
 
+
+
     <footer>
+
         <p>© 2026 Symul Haque Shanto</p>
+
     </footer>
+
+    <button id="topBtn" onclick="goTop()">
+
+        <i class="fa-solid fa-jet-fighter-up"></i>
+
+    </button>
+
+    <script src="js/script.js"></script>
+
 
 </body>
 

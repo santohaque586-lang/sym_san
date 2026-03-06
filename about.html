@@ -1,58 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>About Me</h1>
+
+    <header class="main-header">
+
+        <nav>
+
+            <!-- LEFT SIDE LOGO -->
+
+            <div class="nav-left">
+
+                <a href="index.html">
+
+                    <img src="images/ChatGPT Image Mar 7, 2026, 12_11_12 AM.png" class="nav-logo" alt="Logo">
+
+                </a>
+
+            </div>
+
+            <!-- CENTER MENU -->
+
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- RIGHT SIDE SOCIAL ICONS -->
+
+            <div class="nav-social">
+
+                <a href="https://www.facebook.com/symul.haque.3"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.youtube.com/@incidentbyshs5483"><i class="fab fa-youtube"></i></a>
+
+                <a href="https://x.com/by_symsano09"><i class="fab fa-twitter"></i></a>
+
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </nav>
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section>
+    <section class="about-section">
 
-        <img src="11.png" width="200">
+        <div class="about-container">
 
-        <p>
+            <div class="about-photo">
+                <img src="images/normal.jpeg" alt="Profile Photo">
+            </div>
 
-            I am an Electrical and Telecommunication Engineering student currently
-            studying at Rajshahi University of Engineering and Technology.
-            I have a strong interest in programming and web technologies.
-            I enjoy learning how websites work and how interactive applications
-            can be built using HTML, CSS and JavaScript.
+            <div class="about-text">
 
-            My goal is to become a skilled software developer and work on
-            innovative technology projects that can solve real world problems.
-            I believe that continuous learning and practical experience are the
-            most important parts of becoming a successful engineer.
+                <h2>Symul Haque Shanto</h2>
 
-            Besides academics, I like exploring new technologies and improving
-            my problem solving skills. I also enjoy singing and creative
-            activities during my free time.
+                <p>
 
-        </p>
+                    I am an Electrical and Telecommunication Engineering student currently studying at
+                    Rajshahi University of Engineering and Technology (RUET). I am passionate about
+                    technology, programming and problem solving. I enjoy learning new technologies
+                    and developing projects that combine creativity with engineering knowledge.
+
+                    I am currently learning web development including HTML, CSS and JavaScript to
+                    build modern websites and digital solutions. My goal is to become a skilled
+                    software developer and technology professional who can contribute to innovative
+                    projects in the future.
+
+                    Besides academics, I have a strong interest in competitive gaming, especially
+                    first-person shooter (FPS) games. Gaming helps me improve strategic thinking,
+                    fast decision making and teamwork. These skills also help me in technical
+                    problem solving and project development.
+
+                    I believe continuous learning, curiosity and dedication are the keys to becoming
+                    a successful engineer and developer. Through this portfolio, I aim to showcase
+                    my education, technical skills and the projects I am working on.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
+
 
     <footer>
         <p>© 2026 Symul Haque Shanto</p>
     </footer>
+    <button id="topBtn" onclick="goTop()">
 
+        <i class="fa-solid fa-jet-fighter-up"></i>
+
+    </button>
 </body>
 
 </html>

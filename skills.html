@@ -1,62 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Skills</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Skills</h1>
+    <header class="main-header">
+
+
+        <nav>
+
+            <!-- LEFT SIDE LOGO -->
+
+            <div class="nav-left">
+
+                <a href="index.html">
+
+                    <img src="images/ChatGPT Image Mar 7, 2026, 12_11_12 AM.png" class="nav-logo" alt="Logo">
+
+                </a>
+
+            </div>
+
+            <!-- CENTER MENU -->
+
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- RIGHT SIDE SOCIAL ICONS -->
+
+            <div class="nav-social">
+
+                <a href="https://www.facebook.com/symul.haque.3"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.youtube.com/@incidentbyshs5483"><i class="fab fa-youtube"></i></a>
+
+                <a href="https://x.com/by_symsano09"><i class="fab fa-twitter"></i></a>
+
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </nav>
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section>
+    <section class="skills-section">
 
-        <h2>Technical Skills</h2>
+        <!-- Technical Skills -->
 
-        <p>HTML</p>
-        <div class="bar">
-            <div class="html"></div>
+        <div class="skill-row">
+
+            <div class="skill-text">
+
+                <h2>Technical Skills</h2>
+
+                <ul>
+                    <li>HTML5 Web Structure</li>
+                    <li>CSS3 Responsive Design</li>
+                    <li>JavaScript Basics</li>
+                    <li>Arduino Programming</li>
+                    <li>IoT Project Development</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-img">
+
+                <img src="images/techniqal.jpg">
+
+            </div>
+
         </div>
 
-        <p>CSS</p>
-        <div class="bar">
-            <div class="css"></div>
+
+        <!-- Language Skills -->
+
+        <div class="skill-row reverse">
+
+            <div class="skill-text">
+
+                <h2>Language Skills</h2>
+
+                <ul>
+                    <li>Bangla (Native)</li>
+                    <li>English (Professional Communication)</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-img">
+
+                <img src="images/language.webp">
+
+            </div>
+
         </div>
 
-        <p>JavaScript</p>
-        <div class="bar">
-            <div class="js"></div>
+
+        <!-- Gaming Skills -->
+
+        <div class="skill-row">
+
+            <div class="skill-text">
+
+                <h2>Gaming Skills</h2>
+
+                <ul>
+                    <li>Competitive FPS Gaming</li>
+                    <li>Strategic Thinking</li>
+                    <li>Fast Decision Making</li>
+                    <li>Team Coordination</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-img">
+
+                <img src="images/gaming.jpg">
+
+            </div>
+
         </div>
 
-        <h2>Soft Skills</h2>
 
-        <ul>
-            <li>Problem Solving</li>
-            <li>Communication</li>
-            <li>Team Work</li>
-            <li>Time Management</li>
-        </ul>
+        <!-- Professional Skills -->
+
+        <div class="skill-row reverse">
+
+            <div class="skill-text">
+
+                <h2>Professional Skills</h2>
+
+                <ul>
+                    <li>Presentation Skills</li>
+                    <li>Problem Solving</li>
+                    <li>Team Work</li>
+                    <li>Time Management</li>
+                    <li>Creative Thinking</li>
+
+                </ul>
+
+            </div>
+
+            <div class="skill-img">
+
+                <img src="images/professional_skills_split_20260305_185700.png">
+
+            </div>
+
+        </div>
+
 
     </section>
 
     <footer>
         <p>© 2026 Symul Haque Shanto</p>
     </footer>
+    <button id="topBtn" onclick="goTop()">
+
+        <i class="fa-solid fa-jet-fighter-up"></i>
+
+    </button>
+    <script src="js/script.js"></script>
 
 </body>
 

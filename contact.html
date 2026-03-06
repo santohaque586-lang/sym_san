@@ -1,51 +1,158 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <title>Contact</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Contact Me</h1>
+    <header class="main-header">
+
+        <nav>
+
+            <!-- LEFT SIDE LOGO -->
+
+            <div class="nav-left">
+
+                <a href="index.html">
+
+                    <img src="images/ChatGPT Image Mar 7, 2026, 12_11_12 AM.png" class="nav-logo" alt="Logo">
+
+                </a>
+
+            </div>
+
+            <!-- CENTER MENU -->
+
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- RIGHT SIDE SOCIAL ICONS -->
+
+            <div class="nav-social">
+
+                <a href="https://www.facebook.com/symul.haque.3"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.youtube.com/@incidentbyshs5483"><i class="fab fa-youtube"></i></a>
+
+                <a href="https://x.com/by_symsano09"><i class="fab fa-twitter"></i></a>
+
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="menu-close">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </nav>
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <section class="contact-section">
 
-    <section>
+        <h1>Need Help?</h1>
 
-        <form name="contactForm" onsubmit="return validateForm()">
+        <p>If you have any feedback, project ideas or suggestions feel free to contact me.</p>
 
-            <label>Name</label>
-            <input type="text" name="name">
+        <button class="contact-btn" onclick="openForm()">
 
-            <label>Email</label>
-            <input type="text" name="email">
+            <i class="fa-solid fa-envelope"></i>
+            Fill Feedback Form
 
-            <label>Message</label>
-            <textarea name="message"></textarea>
-
-            <input type="submit" value="Submit">
-
-        </form>
+        </button>
 
     </section>
 
+    <!-- CONTACT POPUP FORM -->
+
+    <div class="contact-popup" id="contactPopup">
+
+        <div class="popup-form">
+
+            <span class="close-btn" onclick="closeForm()">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </span>
+
+            <h2>Share Your Thoughts</h2>
+
+            <form id="contactForm" action="https://formspree.io/f/mnjgaged" method="POST" enctype="multipart/form-data">
+
+                <label>Name</label> <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+                <label>Email</label> <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+                <label>Message</label>
+
+                <textarea name="message" id="message" placeholder="Write your message" required></textarea>
+
+                <label>Rate My Portfolio</label>
+
+                <div class="rating">
+
+                    <label><input type="radio" name="rating" value="1"> 1</label> <label><input type="radio"
+                            name="rating" value="2"> 2</label> <label><input type="radio" name="rating" value="3">
+                        3</label> <label><input type="radio" name="rating" value="4"> 4</label> <label><input
+                            type="radio" name="rating" value="5"> 5</label>
+
+                </div>
+
+                <label>Upload Document (Optional)</label>
+
+                <input type="file" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png">
+
+                <input type="hidden" name="_subject" value="Portfolio Feedback Message">
+
+                <button type="submit" class="send-btn">
+
+                    Submit Feedback
+
+                </button>
+
+                <p id="formStatus"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
     <footer>
+
         <p>© 2026 Symul Haque Shanto</p>
+
     </footer>
+
+    <button id="topBtn" onclick="goTop()">
+
+        <i class="fa-solid fa-jet-fighter-up"></i>
+
+    </button>
 
     <script src="js/script.js"></script>
 
