@@ -1153,3 +1153,17 @@ nav ul li a:hover::after {
     display: block;
   }
 }
+.about {
+    max-width: 800px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #d1d5db; /* soft light color */
+}
+
+.about p {
+    margin-bottom: 16px;
+}
+
+.about strong {
+    color: #ffffff;
+}
